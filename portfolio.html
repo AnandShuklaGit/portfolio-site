@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Shukla — Developer & Data Enthusiast</title>
+    <meta name="description" content="Portfolio of Anand Shukla — BTech Computer Science student at Central University of Jammu. Passionate about Data Science, AI/ML, and Web Development.">
+    <meta name="keywords" content="Anand Shukla, portfolio, developer, data science, AI, machine learning, web development, CSE">
+    <meta name="author" content="Anand Shukla">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons (CSS approach) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">AS<span class="logo-dot">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Get in Touch</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge reveal">
+                    <span class="badge-dot"></span>
+                    Open to Opportunities
+                </div>
+                <h1 class="hero-title reveal">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Anand Shukla</span>
+                    <span class="hero-role">
+                        <span class="role-static">I build</span>
+                        <span class="role-dynamic" id="typedText"></span>
+                        <span class="cursor-blink">|</span>
+                    </span>
+                </h1>
+                <p class="hero-description reveal">
+                    Computer Science student at <strong>Central University of Jammu</strong> with a passion for 
+                    <em>Data Science</em>, <em>AI/ML</em>, and <em>Web Development</em>. I enjoy turning complex 
+                    problems into elegant, data-driven solutions.
+                </p>
+                <div class="hero-actions reveal">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                        <i class="ph ph-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Talk
+                    </a>
+                </div>
+                <div class="hero-socials reveal">
+                    <a href="https://github.com/AnandShuklaGit" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                        <i class="ph ph-github-logo"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anand-shukla-435419383" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                        <i class="ph ph-linkedin-logo"></i>
+                    </a>
+                    <a href="mailto:anandshukla7488@gmail.com" class="social-link" aria-label="Email">
+                        <i class="ph ph-envelope-simple"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="card-filename">anand.py</span>
+                    </div>
+                    <div class="card-body">
+                        <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        self.<span class="code-attr">name</span> = <span class="code-string">"Anand Shukla"</span>
+        self.<span class="code-attr">university</span> = <span class="code-string">"CUJ"</span>
+        self.<span class="code-attr">cgpa</span> = <span class="code-number">8.68</span>
+        self.<span class="code-attr">interests</span> = [
+            <span class="code-string">"Data Science"</span>,
+            <span class="code-string">"AI / ML"</span>,
+            <span class="code-string">"Web Dev"</span>,
+            <span class="code-string">"Cybersecurity"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-func">say_hello</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"Let's build something!"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">01 / About</span>
+                <h2 class="section-title">A bit about me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a first-year <strong>B.Tech Computer Science</strong> student at the Central University of Jammu 
+                        with a CGPA of <strong>8.68</strong>. My journey into tech started with curiosity about how data 
+                        shapes decisions — and that curiosity has only grown.
+                    </p>
+                    <p>
+                        I enjoy working at the intersection of <strong>data analytics</strong> and <strong>software development</strong>. 
+                        Whether it's building a fraud detection pipeline, analyzing customer behavior, or crafting a responsive web interface, 
+                        I'm driven by the challenge of solving real problems with clean, efficient code.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new AI research, participating in hackathons, 
+                        or diving into cybersecurity concepts.
+                    </p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="8.68" data-decimal="true">0</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">02 / Education</span>
+                <h2 class="section-title">Academic journey</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header-row">
+                            <h3>B.Tech in Computer Science & Engineering</h3>
+                            <span class="timeline-badge">2025 — 2029</span>
+                        </div>
+                        <p class="timeline-institution">Central University of Jammu</p>
+                        <p class="timeline-score">CGPA: 8.68</p>
+                        <p class="timeline-detail">
+                            Relevant Coursework: C Programming, DSA, Python, Intro to Data Science, 
+                            Fundamentals of AI, Cyber Security, Software Engineering.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header-row">
+                            <h3>Class XII — CBSE</h3>
+                            <span class="timeline-badge">2022 — 2024</span>
+                        </div>
+                        <p class="timeline-institution">Surajmull Jain DAV Public School, Chaibasa</p>
+                        <p class="timeline-score">87.6%</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header-row">
+                            <h3>Class X — CBSE</h3>
+                            <span class="timeline-badge">2022</span>
+                        </div>
+                        <p class="timeline-institution">St. Viveka English Medium School, Chaibasa</p>
+                        <p class="timeline-score">95.4%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">03 / Skills</span>
+                <h2 class="section-title">My toolkit</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i class="ph ph-code"></i>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i class="ph ph-stack"></i>
+                        </div>
+                        <h3>Libraries & Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Folium</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i class="ph ph-wrench"></i>
+                        </div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <i class="ph ph-brain"></i>
+                        </div>
+                        <h3>Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">DSA</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">kNN</span>
+                        <span class="skill-tag">k-Means</span>
+                        <span class="skill-tag">Cyber Security</span>
+                        <span class="skill-tag">File Handling</span>
+                        <span class="skill-tag">Recursion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">04 / Projects</span>
+                <h2 class="section-title">Things I've built</h2>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card reveal" id="project-ecommerce">
+                    <div class="project-card-inner">
+                        <div class="project-card-accent"></div>
+                        <div class="project-card-content">
+                            <div class="project-top">
+                                <div class="project-icon">
+                                    <i class="ph ph-shopping-cart"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/AnandShuklaGit" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repository">
+                                        <i class="ph ph-github-logo"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">E-Commerce Customer Behavior Analysis</h3>
+                            <p class="project-description">
+                                End-to-end data analytics pipeline to segment customers and visualize delivery hotspots. 
+                                Synthesized a 200-sample dataset using NumPy, applied Pandas filtering for cart abandonment and 
+                                device-wise traffic analysis. Built an interactive geospatial heatmap with Folium.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                                <span>Folium</span>
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal" id="project-fraud">
+                    <div class="project-card-inner">
+                        <div class="project-card-accent"></div>
+                        <div class="project-card-content">
+                            <div class="project-top">
+                                <div class="project-icon">
+                                    <i class="ph ph-shield-warning"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/AnandShuklaGit" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repository">
+                                        <i class="ph ph-github-logo"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Banking Fraud Detection System</h3>
+                            <p class="project-description">
+                                Statistical outlier detection pipeline to flag suspicious transactions from CSV records. 
+                                Implemented Min-Max normalization and Z-Score (±3) detection; applied IQR-based outlier replacement 
+                                with column mean. Benchmarked both methods for real-world fraud screening.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal" id="project-records">
+                    <div class="project-card-inner">
+                        <div class="project-card-accent"></div>
+                        <div class="project-card-content">
+                            <div class="project-top">
+                                <div class="project-icon">
+                                    <i class="ph ph-database"></i>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/AnandShuklaGit" target="_blank" rel="noopener" class="project-link" aria-label="GitHub repository">
+                                        <i class="ph ph-github-logo"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Student Record Management System</h3>
+                            <p class="project-description">
+                                Menu-driven C application with full CRUD operations across all six file access modes. 
+                                Supports create, read, append, modify, and recreate operations using fseek() for in-place 
+                                updates by roll number with comprehensive error handling.
+                            </p>
+                            <div class="project-tech">
+                                <span>C</span>
+                                <span>File I/O</span>
+                                <span>fprintf</span>
+                                <span>fscanf</span>
+                                <span>fseek</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">05 / Experience</span>
+                <h2 class="section-title">Certifications & virtual experience</h2>
+            </div>
+            <div class="cert-list">
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="ph ph-briefcase"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Technology Job Simulation — Coding & Development</h3>
+                        <p class="cert-org">Deloitte × Forage</p>
+                        <p class="cert-date">April 2026</p>
+                        <p class="cert-detail">Completed practical coding and development tasks simulating real-world work at Deloitte's technology division.</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="ph ph-certificate"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>AI For Everyone — DeepLearning.AI</h3>
+                        <p class="cert-org">Coursera</p>
+                        <p class="cert-date">April 2026</p>
+                        <p class="cert-detail">
+                            Andrew Ng's AI literacy course covering ML concepts, data pipelines, and AI strategy across industries. 
+                            <a href="https://coursera.org/verify/D7KMLVY6R6IS" target="_blank" rel="noopener" class="cert-verify">Verify →</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="ph ph-trophy"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>IEEE Tech-Sanskriti Hackathon</h3>
+                        <p class="cert-org">Central University of Jammu — IEEE CIS</p>
+                        <p class="cert-date">October 2025</p>
+                        <p class="cert-detail">Participated in an IEEE Foundation-supported hackathon organised by the IEEE Computational Intelligence Society Student Branch, CUJ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">06 / Contact</span>
+                <h2 class="section-title">Let's connect</h2>
+            </div>
+            <div class="contact-content reveal">
+                <p class="contact-text">
+                    I'm always interested in hearing about new opportunities, collaborations, 
+                    or just a friendly chat about tech. Feel free to reach out!
+                </p>
+                <a href="mailto:anandshukla7488@gmail.com" class="btn btn-primary btn-large">
+                    <i class="ph ph-envelope-simple"></i>
+                    Say Hello
+                </a>
+                <div class="contact-links">
+                    <a href="tel:+917903769036" class="contact-link">
+                        <i class="ph ph-phone"></i>
+                        +91 7903769036
+                    </a>
+                    <a href="https://github.com/AnandShuklaGit" target="_blank" rel="noopener" class="contact-link">
+                        <i class="ph ph-github-logo"></i>
+                        github.com/AnandShuklaGit
+                    </a>
+                    <a href="https://www.linkedin.com/in/anand-shukla-435419383" target="_blank" rel="noopener" class="contact-link">
+                        <i class="ph ph-linkedin-logo"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Designed & Built by <strong>Anand Shukla</strong></p>
+                <p class="footer-copy">© 2026 — All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
