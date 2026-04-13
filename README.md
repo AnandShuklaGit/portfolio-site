@@ -16,7 +16,3 @@ HTML, CSS, JavaScript
 ## Run Locally
 git clone https://github.com/yourusername/portfolio-website.git
 
-## Contact
-GitHub: https://github.com/yourusername  
-Email: your-email@example.com  
-LinkedIn: https://linkedin.com/in/yourprofile
